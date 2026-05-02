@@ -25,7 +25,26 @@
     <a href="contact.html">Kontak</a>
 </div>
 
+<script>
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("dropdownMenu");
 
+toggle.onclick = () => {
+    menu.classList.toggle("active");
+};
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.add("clicked");
+
+        setTimeout(() => {
+            card.classList.remove("clicked");
+        }, 400);
+    });
+});
+</script>
 
 
 
