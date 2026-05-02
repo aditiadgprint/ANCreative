@@ -6,28 +6,21 @@
 }
 
 body {
-    margin: 0;
     background: #dcdcdc;
+    display: flex;
+    justify-content: center;
 }
 
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px:
+    width: 1200px;
+    transform-origin: top center;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 2fr;
+/* AUTO SCALE UNTUK HP */
+@media (max-width: 1200px) {
+    .wrapper {
+        transform: scale(calc(100vw / 1200));
     }
 }
 
@@ -117,7 +110,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #ffffff90;
-    margin: 40px;
+    margin: 20px;
     padding: 15px 30px;
     border-radius: 20px;
     border: 1px solid black;
@@ -134,8 +127,8 @@ body {
 
 .hero-text p {
     margin-bottom: 8px;
-    font-size: 20px;
-    font-weight: 450;
+    font-size: 30px;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
     opacity: 0;
     animation: fadeUp 1s ease forwards;
@@ -164,12 +157,10 @@ body {
 .keunggulan {
     text-align: center;
     padding: 40px;
-    text-size: 20px;
 }
 
 .keunggulan h2 {
     margin-bottom: 35px;
-    margin-top: 10px;
 }
 
 .keunggulan h2 {
