@@ -6,30 +6,21 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background: #dcdcdc;
     display: flex;
     justify-content: center;
 }
 
-html,body {
-    overflow-x: hiden;
-}
-
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
-    width: 100px;
-    max-widht: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 1200px;
     transform-origin: top center;
 }
 
 /* AUTO SCALE UNTUK HP */
-@media (max-width: 100px) {
+@media (max-width: 1200px) {
     .wrapper {
-        transform: scale(calc(100vw / 100));
+        transform: scale(calc(100vw / 1200));
     }
 }
 
