@@ -164,12 +164,15 @@ body {
 .keunggulan {
     text-align: center;
     padding: 40px;
+    text-size: 20px;
 }
 
 .keunggulan h2 {
     margin-bottom: 35px;
-    margin-top: 30px;
-    text-size: 5px;
+    margin-top: 25px;
+}
+
+.keunggulan h2 {
     animation: fadeUp 1s ease;
 }
 
