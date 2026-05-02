@@ -134,8 +134,8 @@ body {
 
 .hero-text p {
     margin-bottom: 8px;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 450;
     font-family: 'Poppins', sans-serif;
     opacity: 0;
     animation: fadeUp 1s ease forwards;
@@ -169,7 +169,7 @@ body {
 .keunggulan h2 {
     margin-bottom: 35px;
     margin-top: 30px;
-    text-size: 5px;
+    text-size: 40px;
     animation: fadeUp 1s ease;
 }
 
