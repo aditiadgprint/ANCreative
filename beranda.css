@@ -310,6 +310,11 @@ body {
     font-weight: 400;
 }
 
+.info p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
 /* FOOTER / COPYRIGHT */
 .footer {
      color: #555;
