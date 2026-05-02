@@ -6,55 +6,39 @@
 }
 
 body {
-    margin: 0;
     background: #dcdcdc;
 }
 
-/* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
+/* WRAPPER */
 .wrapper {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* ← tadi typo disini */
+    padding: 0 20px;
 }
 
-/* ================= DESKTOP DEFAULT ================= */
-/* (tidak perlu diubah karena sudah default desktop) */
-
-
-/* ================= TABLET ================= */
+/* RESPONSIVE */
 @media (max-width: 992px) {
-    .wrapper {
-        padding: 0 15px;
-    }
+    .wrapper { padding: 0 15px; }
 }
 
-/* ================= MOBILE ================= */
 @media (max-width: 768px) {
-    
     .hero {
-        display: flex;
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
 
     .grid {
-        display: grid;
-        grid-template-columns: 1fr; /* ← diperbaiki dari 2fr */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .wrapper {
-        padding: 0 10px;
-    }
+    .wrapper { padding: 0 10px; }
 }
 
-/* ================= MOBILE KECIL ================= */
 @media (max-width: 480px) {
-    .wrapper {
-        padding: 0 8px;
-    }
+    .wrapper { padding: 0 8px; }
 }
 
 /* NAVBAR */
@@ -86,17 +70,9 @@ body {
     font-size: 22px;
 }
 
-.aditia {
-    color: #1e3a8a; /* biru tua */
-}
-
-.dg {
-    color: #000000; /* hitam */
-}
-
-.print {
-    color: #60a5fa; /* biru muda */
-}
+.aditia { color: #1e3a8a; }
+.dg { color: #000; }
+.print { color: #60a5fa; }
 
 /* MENU */
 .menu-toggle {
@@ -137,25 +113,17 @@ body {
 }
 
 /* HERO */
-
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #ffffff90;
     margin: 20px;
-    padding: 15px 30px;
+    padding: 40px;
     border-radius: 20px;
     border: 1px solid black;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.427);
     animation: slideDown 1s ease;
-}
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    align-items: center;
 }
 
 .hero-text p {
@@ -171,16 +139,11 @@ body {
     word-spacing: -0.5px;
 }
 
-.hero-text p:nth-child(1){animation-delay:0.2s;}
-.hero-text p:nth-child(2){animation-delay:0.4s;}
-.hero-text p:nth-child(3){animation-delay:0.6s;}
-.hero-text p:nth-child(4){animation-delay:0.8s;}
-
 .hero-text h1 {
     margin-top: 15px;
     font-size: 25px;
     font-weight: bolder;
-    font-family: 'Montsterrat',sans-serif;
+    font-family: 'Montsterrat', sans-serif;
     opacity: 0;
     animation: zoomIn 1s ease forwards 1s;
     text-align: left;
@@ -199,20 +162,12 @@ body {
 
 .keunggulan h2 {
     font-size: 19px;
-}
-
-.keunggulan h2 {
     font-weight: bold;
-}
-
-.keunggulan h2 {
     margin-bottom: 35px;
-}
-
-.keunggulan h2 {
     animation: fadeUp 1s ease;
 }
 
+/* CARDS */
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -224,12 +179,14 @@ body {
     background: #eee;
     padding: 25px;
     border-radius: 15px;
-    font-weight: normal;
     font-size: 12px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     opacity: 0;
     transform: translateY(30px);
     animation: fadeUp 1s ease forwards;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .card:nth-child(1){animation-delay:0.2s;}
@@ -238,36 +195,12 @@ body {
 .card:nth-child(4){animation-delay:0.8s;}
 
 .card:hover {
-    transform: scale(1.07) translateY(-5px);
-}
-
-.card {
-    background: #eee;
-    padding: 25px;
-    border-radius: 15px;
-    font-weight: bold;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s ease forwards;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-}
-
-/* Hover (desktop) */
-.card:hover {
     transform: translateY(-8px) scale(1.05);
     box-shadow: 0 15px 25px rgba(0,0,0,0.15);
 }
 
-/* Klik ditekan */
 .card:active {
     transform: translateY(2px) scale(0.98);
-}
-
-/* Animasi bounce setelah klik */
-.card.clicked {
-    animation: bounceUp 0.4s ease;
 }
 
 /* INFO */
@@ -285,17 +218,15 @@ body {
     margin-bottom: 10px;
 }
 
+.info p {
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing: -0.5px;
+}
+
 .blue-box {
     background: #4a90e2;
     animation-delay: 0.3s;
-}
-
-.blue-box h3 {
-    font-style: bold;
-}
-
-.blue-box p {
-    font-weight: 400;
 }
 
 .green-box {
@@ -303,38 +234,21 @@ body {
     animation-delay: 0.6s;
 }
 
-.green-box h3 {
-    font-style: bold;
-}
-
-.green-box p {
-    font-weight: 400;
-}
-
-.info p {
-    text-align: justify;
-    line-height: 1.5;
-    word-spacing: -0.5px;
-}
-
-/* FOOTER / COPYRIGHT */
+/* FOOTER */
 .footer {
-     color: #555;
+    color: #555;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeUp 1s ease forwards;
-    animation-delay: 1s;
+    animation: fadeUp 1s ease forwards 1s;
+    text-align: center;
 }
 
 .footer p {
-    font-weight: normal;
     font-size: 10px;
     font-style: oblique;
-    text-align: center;
     margin-bottom: 10px;
 }
 
-/* Hover dikit biar hidup */
 .footer:hover {
     letter-spacing: 1px;
     color: #000;
@@ -371,10 +285,4 @@ body {
     0% {transform: translateY(0);}
     50% {transform: translateY(-12px);}
     100% {transform: translateY(0);}
-}
-
-@keyframes bounceUp {
-    0%   { transform: translateY(2px) scale(0.98); }
-    50%  { transform: translateY(-10px) scale(1.05); }
-    100% { transform: translateY(0) scale(1); }
 }
