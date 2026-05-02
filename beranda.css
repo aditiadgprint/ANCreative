@@ -11,6 +11,10 @@ body {
     justify-content: center;
 }
 
+html,body {
+    overflow-x: hiden;
+}
+
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
     width: 1200px;
