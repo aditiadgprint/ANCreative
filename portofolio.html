@@ -46,12 +46,69 @@ cards.forEach(card => {
 });
 </script>
 
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <p><b>Portofolio Kami</b></p>
+        <p>
+            Berikut beberapa hasil karya desain grafis dan percetakan yang telah kami kerjakan untuk klien UMKM, brand, dan perusahaan.
+        </p>
+        <h1>Karya Nyata, Hasil Berkualitas</h1>
+    </div>
 
+    <div class="hero-img">
+        <img src="logo2.png" alt="Portofolio">
+    </div>
+</section>
 
+<!-- PORTOFOLIO GRID -->
+<section class="keunggulan">
+    <h2>Hasil Karya Kami</h2>
 
+    <div class="cards">
+        <div class="card">Desain Logo Brand</div>
+        <div class="card">Banner Promosi</div>
+        <div class="card">Kartu Nama Profesional</div>
+        <div class="card">Desain Feed Instagram</div>
+        <div class="card">Poster Event</div>
+        <div class="card">Kemasan Produk</div>
+    </div>
+</section>
 
+<!-- INFO -->
+<section class="info blue-box">
+    <h3>Desain & Cetak</h3>
+    <p>
+        Kami tidak hanya membuat desain yang menarik, tetapi juga memastikan hasil cetak berkualitas tinggi dengan warna tajam dan detail yang presisi.
+    </p>
+</section>
 
+<!-- FOOTER -->
+<section class="footer">
+    <p>© 2026 aditiadgprint. All Rights Reserved.</p>
+</section>
 
+</div>
 
+<script>
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("dropdownMenu");
 
-                                      TUNGGU UPDATENYA YA.........TERIMAKASIH............
+toggle.onclick = () => {
+    menu.classList.toggle("active");
+};
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.add("clicked");
+        setTimeout(() => {
+            card.classList.remove("clicked");
+        }, 400);
+    });
+});
+</script>
+
+</body>
+</html>
