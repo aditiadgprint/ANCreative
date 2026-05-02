@@ -6,24 +6,30 @@
 }
 
 body {
+    margin: 0;
     background: #dcdcdc;
-    display: flex;
-    justify-content: center;
 }
 
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
-    width: 1200px;
-    transform-origin: top center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px:
 }
 
-/* AUTO SCALE UNTUK HP */
-@media (max-width: 1200px) {
-    .wrapper {
-        transform: scale(calc(100vw / 1200));
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 2fr;
+    }
+}
 /* NAVBAR */
 .navbar {
     display: flex;
