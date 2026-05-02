@@ -30,6 +30,7 @@ body {
         grid-template-columns: 2fr;
     }
 }
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -180,12 +181,11 @@ body {
     margin-top: 20px;
 }
 
-.card div {
+.card {
     background: #eee;
     padding: 25px;
     border-radius: 15px;
     font-weight: bold;
-    text-size: 10px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     opacity: 0;
     transform: translateY(30px);
