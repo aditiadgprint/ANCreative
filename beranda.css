@@ -6,8 +6,8 @@
 }
 
 body {
+    margin: 0;
     background: #dcdcdc;
-    display: block;
 }
 
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
