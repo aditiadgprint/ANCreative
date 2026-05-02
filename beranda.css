@@ -19,7 +19,7 @@ html,body {
 
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
-    width: 1200px;
+    width: 100px;
     transform-origin: top center;
 }
 
