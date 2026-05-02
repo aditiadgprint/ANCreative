@@ -46,11 +46,75 @@ cards.forEach(card => {
 });
 </script>
 
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <p><b>Tentang Kami</b></p>
+        <p>
+            Aditia DG Print adalah perusahaan yang bergerak di bidang jasa desain grafis dan percetakan.
+            Kami membantu bisnis, UMKM, hingga personal brand untuk tampil lebih profesional melalui desain visual yang menarik dan berkualitas.
+        </p>
+        <h1>Desain & Cetak, Lebih Mudah Bersama Kami</h1>
+    </div>
 
+    <div class="hero-img">
+        <img src="logo2.png" alt="Tentang Kami">
+    </div>
+</section>
 
+<!-- VISI MISI -->
+<section class="info blue-box">
+    <h3>Visi Kami</h3>
+    <p>
+        Menjadi penyedia jasa desain grafis dan percetakan yang kreatif, profesional, dan terpercaya di Indonesia.
+    </p>
+</section>
 
+<section class="info green-box">
+    <h3>Misi Kami</h3>
+    <p>
+        Memberikan layanan desain yang berkualitas, harga terjangkau, proses cepat, serta hasil cetak yang memuaskan untuk setiap pelanggan.
+    </p>
+</section>
 
+<!-- KEUNGGULAN -->
+<section class="keunggulan">
+    <h2>Kenapa Memilih Kami?</h2>
 
+    <div class="cards">
+        <div class="card">Desain Profesional</div>
+        <div class="card">Cetak Berkualitas Tinggi</div>
+        <div class="card">Harga Terjangkau</div>
+        <div class="card">Respon Cepat</div>
+    </div>
+</section>
 
+<!-- FOOTER -->
+<section class="footer">
+    <p>© 2026 aditiadgprint. All Rights Reserved.</p>
+</section>
 
-                                      TUNGGU UPDATENYA YA.........TERIMAKASIH............
+</div>
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("dropdownMenu");
+
+toggle.onclick = () => {
+    menu.classList.toggle("active");
+};
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.add("clicked");
+        setTimeout(() => {
+            card.classList.remove("clicked");
+        }, 400);
+    });
+});
+</script>
+
+</body>
+</html>
