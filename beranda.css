@@ -7,21 +7,15 @@
 
 body {
     background: #dcdcdc;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
-    width: 1200px;
-    transform-origin: top center;
-}
-
-/* AUTO SCALE UNTUK HP */
-@media (max-width: 1200px) {
-    .wrapper {
-        transform: scale(calc(100vw / 1200));
-    }
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px:
 }
 
 /* NAVBAR */
