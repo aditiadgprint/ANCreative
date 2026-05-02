@@ -19,14 +19,14 @@ html,body {
 
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
-    width: 1000px;
+    width: 100px;
     transform-origin: top center;
 }
 
 /* AUTO SCALE UNTUK HP */
-@media (max-width: 1000px) {
+@media (max-width: 100px) {
     .wrapper {
-        transform: scale(calc(100vw / 1200));
+        transform: scale(calc(100vw / 100));
     }
 }
 
