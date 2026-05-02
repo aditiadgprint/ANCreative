@@ -180,7 +180,7 @@ body {
     margin-top: 20px;
 }
 
-.card {
+.card div {
     background: #eee;
     padding: 25px;
     border-radius: 15px;
