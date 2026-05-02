@@ -20,6 +20,9 @@ html,body {
 /* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
 .wrapper {
     width: 100px;
+    max-widht: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     transform-origin: top center;
 }
 
