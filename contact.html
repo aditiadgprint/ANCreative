@@ -46,13 +46,98 @@ cards.forEach(card => {
 });
 </script>
 
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <p><b>Hubungi Kami</b></p>
+        <p>
+            Punya kebutuhan desain grafis atau percetakan? Kami siap membantu kamu dengan cepat dan profesional.
+        </p>
+        <h1>Yuk Konsultasi Sekarang!</h1>
+    </div>
 
+    <div class="hero-img">
+        <img src="logo2.png" alt="Contact">
+    </div>
+</section>
 
+<!-- KONTAK INFO -->
+<section class="keunggulan">
+    <h2>Informasi Kontak</h2>
 
+    <div class="cards">
 
+        <div class="card">
+            📍 Lokasi<br>
+            Sampit, Kalimantan Tengah
+        </div>
 
+        <div class="card">
+            📞 Telepon / WhatsApp<br>
+            +62 8xx-xxxx-xxxx
+        </div>
 
+        <div class="card">
+            ✉ Email<br>
+            aditiadgprint@gmail.com
+        </div>
 
+        <div class="card">
+            ⏰ Jam Operasional<br>
+            Senin - Sabtu (08.00 - 17.00)
+        </div>
 
-                                      TUNGGU UPDATENYA YA.........TERIMAKASIH............
-                                               JANGAN LUPA FOLLOW IGNYA YA.....
+    </div>
+</section>
+
+<!-- WHATSAPP CTA -->
+<section class="info green-box">
+    <h3>Langsung Chat Kami</h3>
+    <p>
+        Klik tombol di bawah untuk langsung terhubung dengan kami melalui WhatsApp.
+    </p>
+
+    <br>
+
+    <a href="https://wa.me/628xxxxxxxxxx" target="_blank" style="
+        display:inline-block;
+        padding:12px 20px;
+        background:#25D366;
+        color:white;
+        text-decoration:none;
+        border-radius:10px;
+        font-weight:bold;
+    ">
+        Chat WhatsApp
+    </a>
+</section>
+
+<!-- FOOTER -->
+<section class="footer">
+    <p>© 2026 aditiadgprint. All Rights Reserved.</p>
+</section>
+
+</div>
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("dropdownMenu");
+
+toggle.onclick = () => {
+    menu.classList.toggle("active");
+};
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.add("clicked");
+        setTimeout(() => {
+            card.classList.remove("clicked");
+        }, 400);
+    });
+});
+</script>
+
+</body>
+</html>
