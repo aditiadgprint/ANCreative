@@ -163,13 +163,13 @@ body {
 /* KEUNGGULAN */
 .keunggulan {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 .keunggulan h2 {
     margin-bottom: 35px;
-    margin-top: 35px;
-    text-size: 20px;
+    margin-top: 30px;
+    text-size: 15px;
     animation: fadeUp 1s ease;
 }
 
