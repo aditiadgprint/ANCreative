@@ -311,6 +311,27 @@ section:nth-of-type(5) li:hover {
     transform: translateY(-3px);
 }
 
+/* FOOTER */
+.footer {
+    color: #555;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards 1s;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 10px;
+    font-style: oblique;
+    margin-bottom: 10px;
+}
+
+.footer:hover {
+    letter-spacing: 1px;
+    color: #000;
+    transition: 0.3s;
+}
+
 /* ===== ANIMASI ===== */
 @keyframes fadeUp {
     to {
