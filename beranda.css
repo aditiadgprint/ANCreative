@@ -286,34 +286,3 @@ body {
     50% {transform: translateY(-12px);}
     100% {transform: translateY(0);}
     }
-
-/* ICON */
-.icon {
-    width: 70px;
-    height: 70px;
-    background: #e9eee9;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 15px;
-}
-
-.icon i {
-    width: 30px;
-    height: 30px;
-    color: #4d6b4d;
-}
-
-/* ANIMASI FADE */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
-        }
