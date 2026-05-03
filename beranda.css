@@ -9,6 +9,10 @@ body {
 background: #dcdcdc;
 }
 
+.html, body {
+    overflow-x: hidden;
+}
+
 /* WRAPPER */
 .wrapper {
 width: 100%;
