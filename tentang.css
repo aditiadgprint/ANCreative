@@ -87,7 +87,7 @@ button {
     cursor: pointer;
     font-weight: 500;
     background: linear-gradient(135deg, #38bdf8, #6366f1);
-    color: white;
+    color: black;
     transition: 0.3s;
 }
 
