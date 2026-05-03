@@ -1,29 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
 }
+
 
 body {
-    background: #dcdcdc;
-    display: flex;
-    justify-content: center;
+background: #dcdcdc;
 }
 
-/* WRAPPER FIXED (INI KUNCI BIAR SAMA DI SEMUA DEVICE) */
+/* WRAPPER */
 .wrapper {
-    width: 1200px;
-    transform-origin: top center;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
 }
 
-/* AUTO SCALE UNTUK HP */
-@media (max-width: 1200px) {
-    .wrapper {
-        transform: scale(calc(100vw / 1200));
-    }
+/* RESPONSIVE */
+@media (max-width: 992px) {
+.wrapper { padding: 0 15px; }
 }
 
+@media (max-width: 768px) {
+.hero {
+flex-direction: column;
+text-align: center;
+gap: 20px;
+}
+    
 /* NAVBAR */
 .navbar {
     display: flex;
