@@ -10,7 +10,7 @@ background: #dcdcdc;
 }
 
 html, body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* WRAPPER */
