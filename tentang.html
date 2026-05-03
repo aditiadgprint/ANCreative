@@ -55,6 +55,25 @@ cards.forEach(card => {
     box-sizing: border-box;
 }
 
+  <script>
+lucide.createIcons();
+
+// animasi scroll
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+faders.forEach(el => {
+    appearOnScroll.observe(el);
+});
+</script>
+  
 body {
     font-family: 'Poppins', sans-serif;
     background: #f5f5f5;
