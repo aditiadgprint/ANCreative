@@ -537,4 +537,33 @@ body {
 </div>
 
 </body>
+
+<section class="footer">
+    <p>© 2026 aditiadgprint. All Rights Reserved.</p>
+</section>
+
+</div>
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("dropdownMenu");
+
+toggle.onclick = () => {
+    menu.classList.toggle("active");
+};
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.add("clicked");
+
+        setTimeout(() => {
+            card.classList.remove("clicked");
+        }, 400);
+    });
+});
+</script>
+
+</body>
 </html>
