@@ -29,6 +29,19 @@ flex-direction: column;
 text-align: center;
 gap: 20px;
 }
+
+.grid {  
+    grid-template-columns: 1fr;  
+    gap: 20px;  
+}  
+
+.wrapper { padding: 0 10px; }
+
+}
+
+@media (max-width: 480px) {
+.wrapper { padding: 0 8px; }
+}
     
 /* NAVBAR */
 .navbar {
