@@ -173,12 +173,20 @@ gap: 20px;
 
 /* KEUNGGULAN */
 .keunggulan {
-    text-align: center;
+    text-align: justify;
     padding: 40px;
 }
 
 .keunggulan h2 {
     margin-bottom: 35px;
+}
+
+.keunggulan h2 {
+    text-size: 30px:
+}
+
+.keunggulan {
+    text-wight: 15px:
 }
 
 .keunggulan h2 {
