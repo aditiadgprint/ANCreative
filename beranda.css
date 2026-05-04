@@ -12,8 +12,9 @@ body {
 }
 
 .wrapper {
-    widht: 80%;
-    max-widht: 1200px;
+    width: 100%
+    max-width: 100px;
+    overflow-X: hidden;
 }
 
 /* NAVBAR */
