@@ -13,12 +13,12 @@ body {
 
 /* WRAPPER */
 .wrapper {
-    width: 1200px;
+    width: 100px;
     transform-origin: top center;
 }
 
 /* AUTO SCALE */
-@media (max-width: 1200px) {
+@media (max-width: 100px) {
     .wrapper {
         transform: scale(calc(100vw / 1200));
     }
