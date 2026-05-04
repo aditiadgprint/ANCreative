@@ -113,6 +113,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    text-align: justify;
     opacity: 0;
     animation: fadeUp 1s ease forwards;
 }
