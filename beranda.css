@@ -11,6 +11,11 @@ body {
     justify-content: center;
 }
 
+.wrapper {
+    widht: 80%;
+    max-widht: 1200px;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
