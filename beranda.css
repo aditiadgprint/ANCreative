@@ -11,34 +11,6 @@ body {
     justify-content: center;
 }
 
-/* WRAPPER UTAMA */
-.wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* HP */
-@media (max-width: 600px) {
-    .wrapper {
-        padding: 10px;
-    }
-}
-
-/* TABLET */
-@media (min-width: 601px) and (max-width: 1023px) {
-    .wrapper {
-        padding: 20px;
-    }
-}
-
-/* DESKTOP */
-@media (min-width: 1024px) {
-    .wrapper {
-        padding: 30px;
-    }
-}
-
 /* NAVBAR */
 .navbar {
     display: flex;
